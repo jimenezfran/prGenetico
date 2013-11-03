@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cromosoma.cs" />
+    <Compile Include="Individuo.cs" />
+    <Compile Include="IProblema.cs" />
+    <Compile Include="OneMax.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

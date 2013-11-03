@@ -10,6 +10,8 @@ namespace prGenetico
     {
         static void Main(string[] args)
         {
+
+            OneMax problema1=new OneMax();
             // Comprueba la clase Coromosoma
             Cromosoma cromo = new Cromosoma(10, false);
             Cromosoma cromo2 = new Cromosoma(10, true);
@@ -17,6 +19,10 @@ namespace prGenetico
 
 
             cromo.Mutar(90);
+
+            // Testeando individuo
+            
+            Individuo individuo = new Individuo(10, problema1);
 
 
             Console.ReadKey();

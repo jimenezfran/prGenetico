@@ -8,5 +8,6 @@ namespace prGenetico
 {
     interface IProblema
     {
+        double Evalua(Cromosoma cr);
     }
 }

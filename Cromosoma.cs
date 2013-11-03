@@ -12,10 +12,13 @@ namespace prGenetico
          public static Random rnd=new Random();
 
 
-         public int Longitud {get{return datos.Length;} set{}}
+         public int Longitud {get{return datos.Length;} set{} }
          public byte this[int i] { get { return datos[i]; } set { datos[i] = value; } }
 
-
+         /// <summary>
+         /// Devuelve una copia del objeto que lo llama.
+         /// </summary>
+         /// <returns></returns>
          public Cromosoma Copia()
          {
              Cromosoma nuevoCromosoma = new Cromosoma(datos.Length,false);
@@ -26,7 +29,7 @@ namespace prGenetico
          /// Crea un Cromosoma
          /// </summary>
          /// <param name="tam">Longitud del cromosoma</param>
-         /// <param name="mod">false: todo a 0. other: aleatorio</param>
+         /// <param name="mod">false: todo a 0. true: aleatorio</param>
          public Cromosoma(int tam,bool mod)
          {
              if (tam <= 0)
