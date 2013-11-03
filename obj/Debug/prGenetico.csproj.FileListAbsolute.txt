@@ -1,0 +1,6 @@
+C:\Users\Rosana\SkyDrive\Riatec\Modulo 2 - POO C# y Java\Prácticas\prGenetico\prGenetico\bin\Debug\prGenetico.exe.config
+C:\Users\Rosana\SkyDrive\Riatec\Modulo 2 - POO C# y Java\Prácticas\prGenetico\prGenetico\bin\Debug\prGenetico.exe
+C:\Users\Rosana\SkyDrive\Riatec\Modulo 2 - POO C# y Java\Prácticas\prGenetico\prGenetico\bin\Debug\prGenetico.pdb
+C:\Users\Rosana\SkyDrive\Riatec\Modulo 2 - POO C# y Java\Prácticas\prGenetico\prGenetico\obj\Debug\prGenetico.csprojResolveAssemblyReference.cache
+C:\Users\Rosana\SkyDrive\Riatec\Modulo 2 - POO C# y Java\Prácticas\prGenetico\prGenetico\obj\Debug\prGenetico.exe
+C:\Users\Rosana\SkyDrive\Riatec\Modulo 2 - POO C# y Java\Prácticas\prGenetico\prGenetico\obj\Debug\prGenetico.pdb
