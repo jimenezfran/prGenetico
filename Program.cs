@@ -24,6 +24,7 @@ namespace prGenetico
             
             Individuo individuo = new Individuo(10, problema1);
 
+            Console.WriteLine(individuo.ToString());
 
             Console.ReadKey();
         }

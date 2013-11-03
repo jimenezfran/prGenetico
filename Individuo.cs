@@ -34,7 +34,13 @@ namespace prGenetico
         }
         public override string ToString()
         {
-            return "Cromosoma: "+cromosoma.datos.ToString()+"Fitness: "+fitness.ToString();
+           // return "Cromosoma: "+cromosoma.datos+"Fitness: "+fitness.ToString();
+            
+            var builder = new StringBuilder();
+            Array.ForEach(cromosoma.datos, x => builder.Append(x));
+            var res = builder.ToString();
+            return "Cromosoma: " + res + " Fitness: " + fitness.ToString();
+
         }
         #endregion
     }
