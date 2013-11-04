@@ -38,7 +38,7 @@ namespace prGenetico
             
             var builder = new StringBuilder();
             Array.ForEach(cromosoma.datos, x => builder.Append(x));
-            var res = builder.ToString();
+            string res = builder.ToString();
 
             return "\n->Cromosoma: " + res + " \n-->Fitness: " + fitness.ToString();
 
