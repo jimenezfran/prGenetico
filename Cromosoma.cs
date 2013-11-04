@@ -25,6 +25,7 @@ namespace prGenetico
              nuevoCromosoma.datos = datos;
              return nuevoCromosoma;
          }
+
          /// <summary>
          /// Crea un Cromosoma
          /// </summary>
@@ -50,7 +51,6 @@ namespace prGenetico
                  }
                  else
                  {
-                     
                      // Cromosoma a valores aleatorios 0/1
                      for (int i = 0; i < tam; i++)
                      {
@@ -60,18 +60,27 @@ namespace prGenetico
              }
          }
 
+         /// <summary>
+         /// Muta los genes del cromosoma en funcion de la probabilidad de mutacion
+         /// </summary>
+         /// <param name="prop">Probabilidad en % [0-100]</param>
          public void Mutar(double prop)
          {
              int prob;
-
-             for (int i = 0; i < datos.Length; i++)
+             if (prop > 100 || prop < 0)
              {
-                 prob = rnd.Next(0, 101);
-                 if (prob < prop)
+                 throw new Exception("Probabilidad invalida. Introduzca probabilidad [0-100]");
+             }
+             else
+             {
+                 for (int i = 0; i < datos.Length; i++)
                  {
-                     // Muta el gen: El operador XOR invierte el bit.
-                     //datos[i] = (byte)((datos[i]) ^(byte)(255));
-                     if (datos[i] == 0) { datos[i] = 1; } else { datos[i] = 0; }
+                     prob = rnd.Next(0, 101); // Cuanto mayor la probabilidad, mas numeros del intervalo estaran por debajo de ella
+                     if (prob < prop)
+                     {
+                         // Muta el gen
+                         if (datos[i] == 0) { datos[i] = 1; } else { datos[i] = 0; }
+                     }
                  }
              }
          }
