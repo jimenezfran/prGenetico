@@ -61,7 +61,7 @@ namespace prGenetico
          }
 
          /// <summary>
-         /// Muta los genes del cromosoma en funcion de la probabilidad de mutacion
+         /// Muta los genes del cromosoma objeto en funcion de la probabilidad de mutacion
          /// </summary>
          /// <param name="prop">Probabilidad en % [0-100]</param>
          public void Mutar(double prop)

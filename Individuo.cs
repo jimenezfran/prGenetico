@@ -40,7 +40,7 @@ namespace prGenetico
             Array.ForEach(cromosoma.datos, x => builder.Append(x));
             var res = builder.ToString();
 
-            return "Cromosoma: " + res + " Fitness: " + fitness.ToString();
+            return "\n->Cromosoma: " + res + " \n-->Fitness: " + fitness.ToString();
 
         }
         #endregion

@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AGUniforme.cs" />
+    <Compile Include="AGUnPunto.cs" />
+    <Compile Include="AlgoritmoGenetico.cs" />
     <Compile Include="Cromosoma.cs" />
     <Compile Include="Individuo.cs" />
     <Compile Include="IProblema.cs" />

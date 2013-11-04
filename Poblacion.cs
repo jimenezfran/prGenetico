@@ -13,8 +13,8 @@ namespace prGenetico
         #endregion
 
         #region Properties
-        int NumIndividuos { get { return individuos.Length; } }
-        Individuo this[int i] { get { return individuos[i]; } }
+        public int NumIndividuos { get { return individuos.Length; } }
+        public Individuo this[int i] { get { return individuos[i]; } }
         #endregion
 
         #region Methods

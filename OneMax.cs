@@ -16,7 +16,6 @@ namespace prGenetico
             {
                 res += cr.datos[i];
             }
-
             return res;
         }
     }
