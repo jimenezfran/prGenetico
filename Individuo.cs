@@ -10,13 +10,13 @@ namespace prGenetico
     {
         #region Fields
         private double fitness;
-        private Cromosoma cromosoma; // :/
+        private Cromosoma cromosoma;
         #endregion
 
 
         #region Properties
-        Cromosoma Cromosoma { get { return this.cromosoma; }  }
-        double Fitness { get { return this.fitness; } }
+        public  Cromosoma Cromosoma { get { return this.cromosoma; }  }
+        public double Fitness { get { return this.fitness; } }
 
         #endregion
 
@@ -39,6 +39,7 @@ namespace prGenetico
             var builder = new StringBuilder();
             Array.ForEach(cromosoma.datos, x => builder.Append(x));
             var res = builder.ToString();
+
             return "Cromosoma: " + res + " Fitness: " + fitness.ToString();
 
         }

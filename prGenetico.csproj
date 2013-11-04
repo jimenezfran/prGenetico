@@ -45,6 +45,7 @@
     <Compile Include="Individuo.cs" />
     <Compile Include="IProblema.cs" />
     <Compile Include="OneMax.cs" />
+    <Compile Include="Poblacion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -26,6 +26,14 @@ namespace prGenetico
 
             Console.WriteLine(individuo.ToString());
 
+            // Testeando poblacion
+
+            Poblacion poblacion = new Poblacion(3, 2, problema1);
+
+            Individuo mejor = poblacion.MejorIndividuo();
+
+            poblacion.Reemplaza(mejor);
+
             Console.ReadKey();
         }
     }
